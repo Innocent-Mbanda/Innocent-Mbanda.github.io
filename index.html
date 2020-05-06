@@ -2,95 +2,195 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://kit.fontawesome.com/486fc7d852.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Innocent portfolio</title>
+    <link rel="stylesheet" href="/Normalize/CSS/normalize.css">
+    <script src="https://kit.fontawesome.com/486fc7d852.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Normalize//responsivegridsystem/css/4cols.css">
+    <link rel="stylesheet" href="./CSS/Images/layout.css">
+    <link rel="stylesheet" href="./CSS/Images/style.css">
+    <link rel="stylesheet" href="./CSS/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./JS/app.js">
+    <title>InnocentMbanda'portfolio</title>
 </head>
 
 <body>
-
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="https://resume.creddle.io/" target="_blank">Resume</a></li>
-
-                    <li><a href="#about">Biograph</a></li>
-                    <li><a href="https://github.com/" target="_blank">Projects</a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                    <li><a href="#Skills2">Skills</a></li>
+        <nav class="sticky">
+            <div class="row">
+                <ul class="main-nav">
+                    <li> <a href="#">About Me</a></li>
+                    <li> <a href="#">Projects</a></li>
+                    <li> <a href="#">Skills</a></li>
+                    <li> <a href="#">Resume</a></li>
+                    <li> <a href="#">Contacts</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav> 
 
+        <div class="hero-text-box">
+                <h1><i>Hello,</i></h1>
+                <h1 class="myprf"><i>I design and devlop experiences <br>that makes people's lives simple</i></h1>
+                <a class="btn btn-full" href="#">I am software Developer</a>
+                <a class="btn btn-moretosee" href="#">I love software</a></div>        
     </header>
-
-    <div class="heading">
-
-        <h1 id class="about">About Me!</h1>
-        <p class="bio1">
-           I am is originally from Africa in a country called Rwanda. When I was young my
-            dream was to become a businessman so that I can buy a house for my family. I developed the love of
-            technology when I touched a computer for the first time at the university. I started saving money to buy
-            myself a laptop. In 2016, I started a project which was teaching young women in Rwanda to learn basic
-            computer skills and in 2017, coding skills were starting to be introduced in Rwanda and I started a
-            coding boot camp for young girls to learn coding skills with help from my schoolmate who was in computer
-            science and project grow up and become huge. After two months of running the program, the USA Embassy
-            was interested in my project and accepted to give us the grant to recruit more young women. In 2018, I
-            moved to USA, Columbus, OH. My wish was to dive into tech and I started searching for the boot camps
-            around in Columbus and I found We Can CODE IT, a five-start coding Bootcamp located in Columbus OH. I
-            joined the boot camp where I am currently working to complete my full stack developer program. </p>
-
-
-        <img class="pic" src="pictures/mbandaphoto.jpg" alt="Innocent picture">
-        <h3>Contact information</h3>
-        <p1> <i class="fas fa-envelope-square "></i> mbandainnocent@gmail.com</p1>
-        <p2> <i class="fas fa-phone"></i> 6148167227</p2>
-         <i class="fab fa-facebook-f"> facebook.com/mbadahi</i>
+    
+   <section class="section-features js--section-features">
+         <img class="img-mb" src="./images/profile.JPG"> 
+          <h5 class="software" >Innocent Mbanda <br> <br> software developer</h5>
+        <div class="row">
+           <h2>a bit about me!</h2> 
         
-        
-       
+            <p class="long-copy">
 
-    </div>
-    </div>
-    <section>
-
-        <div class="special">
-            <h3 id class=Skills2>Skills</h3>
-            <p class="Skills">
-
-                <div class="box">
-                    <p> Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML •
-                        CSS • Flexbox • Grid • TDD • Agile (Scrum) •
-                        Object Oriented Programming (OOP) • AJAX • JSON
-                        • Restful APIs • Responsive Design / Mobile • Structured
-                        Query Language (SQL) • Relational Databases • Source Control / Git</p>
-
-                </div>
-
-
-            </p>
-            <img class="coding" src="pictures/coding.jpg" alt="picture of a person coding">
-            <img class="project1" src="pictures/projects.PNG" alt="Screenshoot from Git Hub">
+            I am originally from Africa in a country called Rwanda. When I was young my dream was to become abusinessman so that I can buy a house for my family. I developed the love of technology when I
+                    touched a computer for the first time at the university. I started saving money to buy myself a
+                    laptop.<span id="dots"></span><span id="more"> 2016, I started a project which was teaching young women in Rwanda to learn basic
+                    computer skills and in 2017, coding skills were starting to be introduced in Rwanda and I started a
+                    coding boot camp for young girls to learn coding skills with help from my schoolmate who was in
+                    computer science and project grow up and become huge. After two months of running the program, the USA Embassy was interested in my project and accepted to give us the grant to recruit more young women. 
+                    <br> <br> In 2018, I moved to USA, Columbus, OH. My wish was to dive into tech and I started searching
+                     for the boot camps around in Columbus and I found We Can CODE IT, a five-start coding Bootcamp
+                     located in Columbus OH. I joined the boot camp where I am currently working to complete my full
+                     stack developer program.</span> <br>
+                     <button type="button" id="read" onclick="read()">Read more</button>
+           </p> 
+       </div>
+    </section>
+    
+    <section class="recent-projects">
+        <H3> <strong>CODING PROJECTS</strong> </H3>
+          <div class="projects">
+            
+              <div class="project1">
+        <div> <a href=""></a><img class="git" src="./images/HightStreetHospital.jpg">
+        <div class="title">Employee Managment web App</div>
+        <div class="description">Software which assign Employees tasks, tracks employees completed,  and also payments</div>
         </div>
+     </div>
+     <div class="project2">
+        <div><img class="git" src="./images/trans.jpg">
+        <div class="title">Parade-Translator web app</div>
+       <div  class="description"> Application helps non-English Speaker parents to communicate with the school through translation. 
+            </div>
+            <!-- <p1 class="description">project description here</p1> -->
+        </div>
+     </div>
+     <div class="project3">
+        <div><img class="git" src="./images/port.jpg">
+            
+        <div  class="title">AlbumMusic Web App</div>
+        <div class="description">Music App which stores music and albums</div>
+            <!-- <p1 class="description">project description here</p1> -->
+        </div>
+     </div>
+
+        </div>
+     </div> 
+    </div>
     </section>
-    <footer>
-        <p>Created by Innocent Mbanda</p>
-  <p>Contact information: <a href="mailto: mbandainnocent@gmail.com">mbandainnocent@gmail.com</a>.</p>
+    <!-- </section> -->
+    <section>
+       <h4 class="pro">Professional Experience</h4>
+       <div class="leadership-experience">
+           
+       <div  class="leadership-experience1">
+        <!-- <div class="icons1"><i class="fas fa-home"></i></div> -->
+           <h3> <strong>Project Manager</strong> (08/2016-12/2019)<br> <br> Igire Rwanda Organization  </h3>
+           <ul>
+               <li>Defined project scope, goals, milestones, deliverables, detailed tasks, and resource </li>
+               <li>Collaborated with Project Director to establish risk parameters and performed risk assessments for all active vendors to maintain a culture of compliance.
+            </li>
+               <li>Worked with Program Managers to complete projects through mentoring during the product life cycle to deliver high-quality results.
+            </li>
+               <li>Created and delivered weekly project status reports and followed-up with project owners and stakeholders on pending action items.</li>
+               <!-- <li>Established, scheduled, coordinated, supervised, and documented testing and corrective actions.
+            </li>
+               <li>Met deadlines by managing time effectively to complete multiple tasks.
+            </li>
+               <li>Coordinated initial and additional resources to meet project needs.</li> -->
 
-</footer>
-    </footer>
+           </ul>
+        
+       </div>
+       <div class="leadership-experience2">
+        <!-- <div class="icons2"><i class="fas fa-home"></i></div> -->
+        <h3> <strong>Project Consultant</strong> (05/2018-12/2018) <br> <br> Moringa IT school-Nairobi,Kenya  </h3>
+        <ul>
+            <li>Assessed the expected risks at each project stage and developed response strategies.</li>
+            <li>Created and delivered weekly project status reports and followed-up with project owners and stakeholders on pending action items.</li>
+            <li>Consulted with customers to understand their desires and suggest the best products to meet their needs.
+            </li>
+            <li>Defined project scope, goals, milestones, deliverables, detailed tasks, and resource requirements from concept creation through implementation.
+            </li>
+            <!-- <li>Kept projects in line with budget, schedule and content demands by closely monitoring the work of all team members.</li> -->
+        </ul>
+    </div>
+    <div class="leadership-experience3">
+        <!-- <div class="icons3"><i class="fas fa-home"></i></div> -->
+        <h3> <strong>Project Consultant </strong>  (02/2016-08/2016) <br> <br> Kepler Kigali  </h3>
+       <ul>
+           <li>Coordinated all the Preparation Program activities in Gihembe Refugee camp.</li>
+           <li>Prepared budgets and monitoring the proper use of funds for the project.</li>
+           <li>Liaised with UNHCR and its partners in Gihembe Refugee camp.</li>
+           <li>Communicated with the Kepler Management team on the progress of activities.</li>
+           <li>Monitored the progress of the project and provided reports on a weekly basis.
+        </li>
+       </ul>
+    </div>
+</div>
+   </section>
+   <section class="skills">
+    <h5> CODING SKILLS & PROFFESSIONAL SKILLS</h5> 
+       <div class="row-skills">
+         
+         <div class="quote"><blockquote>
+            <h3> <strong>JAVA-(Backend)</strong> </h3>
+            <p>Java • Spring • Hibernate • JPA • JavaScript • MVC  • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git.</p>
+            </blockquote></div>  
 
+            <div class="quote"><blockquote>
+                <h3> <strong>JavaScript-(Font-end)</strong> </h3>
+                <p>avaScript • NodeJS • Express  • HTML5 • CSS3 • Grid • Flexbox • React • TDD • Agile (Scrum) • AJAX • JSON • Restful APIs • Single Page Applications (SPAs) • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • NoSQL Databases • GitHub.</p>
+                </blockquote></div> 
+          
 
-    </section>
+          
+           <div class="professional-skills"> <blockquote>
+            <h3> <strong> Non-Technical Skills (Soft-Skills)</strong> </h3>
+             <p>Time managment,<br> Problem solving, <br> Paying attention to the details <br>leadeship skills </p> 
+           </blockquote></div>
+          
+       </div>
+   </section>
+   <footer>
+       <div class="row-footer">
+           <div class="social-page"> 
+               <ul class="social-links">
+                <li><a href="https://www.facebook.com/mbadahi"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/mbandainnocent"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mbanda-innocent-a91737aa/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li> <a href="https://github.com/Innocent-Mbanda?tab=repositories"><i class="fab fa-github"></i></a></li>
+                </ul>
+               
+            </div>
+            <!-- <div class="mail"><p>
+               <a href="#"><i class="fas fa-envelope-square"> <br></i></a>
+            </p></div> -->
+           </div>
+           <div class="copy"><p>
+               copyright &copy;2020 by Innocent_Mbanda
+           </p></div>
+       </div>
+   </footer>
 
-
-
-
-
+<script src="./JS/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/JS/jquery.waypoints.min.js"></script>
+<script src="/JS/script.js"></script>
 </body>
-
+ 
 </html>
