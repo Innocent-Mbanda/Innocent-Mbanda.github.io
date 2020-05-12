@@ -19,14 +19,14 @@
 
 <body>
     <header>
-        <nav class="sticky">
+        <nav>
             <div class="row">
                 <ul class="main-nav">
-                    <li> <a href="#">About Me</a></li>
-                    <li> <a href="#">Projects</a></li>
-                    <li> <a href="#">Skills</a></li>
-                    <li> <a href="#">Resume</a></li>
-                    <li> <a href="#">Contacts</a></li>
+                    <li> <a href="#aboutme">About Me</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#skills">Skills</a></li>
+                    <li> <a href="#Resume">Resume</a></li>
+                    <li> <a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
         </nav> 
@@ -38,10 +38,10 @@
                 <a class="btn btn-moretosee" href="#">I love software</a></div>        
     </header>
     
-   <section class="section-features js--section-features">
+   <section id="aboutme" class ="section-features js--section-features">
          <img class="img-mb" src="./images/profile.JPG"> 
           <h5 class="software" >Innocent Mbanda <br> <br> software developer</h5>
-        <div class="row">
+        <div class="row" id=>
            <h2>a bit about me!</h2> 
         
             <p class="long-copy">
@@ -61,7 +61,7 @@
        </div>
     </section>
     
-    <section class="recent-projects">
+    <section id="projects" class="recent-projects">
         <H3> <strong>CODING PROJECTS</strong> </H3>
           <div class="projects">
             
@@ -93,7 +93,7 @@
     </div>
     </section>
     <!-- </section> -->
-    <section>
+    <section id="Resume">
        <h4 class="pro">Professional Experience</h4>
        <div class="leadership-experience">
            
@@ -143,7 +143,7 @@
     </div>
 </div>
    </section>
-   <section class="skills">
+   <section id="skills" class="skills">
     <h5> CODING SKILLS & PROFFESSIONAL SKILLS</h5> 
        <div class="row-skills">
          
@@ -166,7 +166,7 @@
           
        </div>
    </section>
-   <footer>
+   <footer id="contacts">
        <div class="row-footer">
            <div class="social-page"> 
                <ul class="social-links">
@@ -189,7 +189,7 @@
 
 <script src="./JS/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/JS/jquery.waypoints.min.js"></script>
+<script src="JS/jquery.waypoints.min.js"></script>
 <script src="/JS/script.js"></script>
 </body>
  

@@ -233,14 +233,15 @@ header{
     float: left;
     margin-top: 20px;
 }
+/* main nva */
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 70px;
+    margin-top: 55px;
 }
 .main-nav li{
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .main-nav li a{
@@ -255,8 +256,25 @@ header{
 
 .main-nav li a:hover{
     border-bottom: 2px solid orange;
-
 }
+/* sticky nav */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    box-shadow: 0 2px 2px #fff;
+    z-index: 9999;
+}
+.main-nav{ margin-top:45px;
+margin-bottom: 18px;}
+.sticky
+.main-nav li a{
+    padding: 18px 0;
+    color:rgb(245, 245, 245);
+}
+
 /*---section-A*/
 
 section{
